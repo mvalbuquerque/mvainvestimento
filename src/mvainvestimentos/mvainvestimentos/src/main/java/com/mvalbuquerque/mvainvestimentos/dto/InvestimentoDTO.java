@@ -2,34 +2,43 @@ package com.mvalbuquerque.mvainvestimentos.dto;
 
 public class InvestimentoDTO {
 
-        private double valor;
-        private int    quatidadeDeMeses;
-        private double montante;
+    private double valor;
+    private int quantidadeMeses;
+    private double montante;
 
-        public  InvestimentoDTO()  {
-        }
+    public InvestimentoDTO() {
+    }
 
-        public  InvestimentoDTO(double valor,
-                                int quatidadeDeMeses,
-                                double montante) {
-            super();
-            this.valor = valor;
-            this.quatidadeDeMeses = quatidadeDeMeses;
-            this.montante = montante;
-        }
+    public InvestimentoDTO(double valor, int quantidadeMeses, double montante) {
+        super();
+        this.valor = valor;
+        this.quantidadeMeses = quantidadeMeses;
+        this.montante = montante;
+    }
 
-        public  double getValor() {return  valor; }
+    public double getValor() {
+        return valor;
+    }
 
-        public  void setValor(double valor)
-        {this.valor = valor;}
+    public void setValor(double valor) {
+        this.valor = valor;
+    }
 
-        public  int getQuatidadeDeMeses() {return  quatidadeDeMeses;}
+    public int getQuantidadeMeses() {
+        return quantidadeMeses;
+    }
 
-        public void setQuatidadeDeMeses(int quatidadeDeMeses)
-        { this.quatidadeDeMeses = quatidadeDeMeses;}
+    public void setQuantidadeMeses(int quantidadeMeses) {
+        this.quantidadeMeses = quantidadeMeses;
+    }
 
-        public double getMontante() {return montante;}
+    public double getMontante() {
+        return montante;
+    }
 
-        public void setMontante(double montante) {this.montante = montante;}
+    public void setMontante(double montante) {
+        this.montante = montante;
+    }
+
 }
 
