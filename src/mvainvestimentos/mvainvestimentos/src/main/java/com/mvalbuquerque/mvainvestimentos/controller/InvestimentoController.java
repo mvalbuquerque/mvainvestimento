@@ -1,7 +1,5 @@
 package com.mvalbuquerque.mvainvestimentos.controller;
 
-import com.mvalbuquerque.mvainvestimentos.dto.InvestimentoDTO;
-
 
 import org.springframework.http.HttpStatus;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,7 +11,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-ontroller
+import com.mvalbuquerque.mvainvestimentos.dto.InvestimentoDTO;
+import com.mvalbuquerque.mvainvestimentos.service.InvestimentoService;
+
+@RestController
 public class InvestimentoController {
 
     @Autowired
@@ -29,8 +30,5 @@ public class InvestimentoController {
     public InvestimentoDTO createInvestimento(@RequestBody InvestimentoDTO novoInvestimento) {
         return investimentoService.criaInvestimento(novoInvestimento);
     }
-
-}
-
 
 }
